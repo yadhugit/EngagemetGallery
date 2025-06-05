@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+</head>
+<body>
+    <header>
+        <h1>Our Engagement Gallery</h1>
+        <p>Click to view • Right-click to download</p>
+    </header>
+
+    <main>
+        <div class="gallery-controls">
+            <input type="text" id="search" placeholder="Search photos...">
+            <div class="gallery-info">Showing <span id="photo-count">0</span> photos</div>
+        </div>
+        
+        <div class="gallery-container" id="gallery">
+            <!-- Images will be loaded here -->
+            <div class="loading-spinner"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Our Memories • All photos can be downloaded</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
